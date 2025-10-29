@@ -168,6 +168,24 @@
       .textr {
         padding-top: 10px;
       }
+      #interactive {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 4 / 3; /* hoặc 16 / 9 tùy camera */
+  margin: 0 auto;
+  overflow: hidden;
+  background: #000;
+  border-radius: 8px;
+}
+
+#interactive video,
+#interactive canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* giúp hình ảnh camera lấp đầy khung */
+}
+
     </style>
   </head>
   <body>
